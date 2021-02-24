@@ -1,0 +1,16 @@
+C:\Projects\Coles\FactoryCoding\src\FactoryCodingChallenge\bin\Debug\netcoreapp3.1\FactoryCodingChallenge.exe
+C:\Projects\Coles\FactoryCoding\src\FactoryCodingChallenge\obj\Debug\netcoreapp3.1\FactoryCodingChallenge.csprojAssemblyReference.cache
+C:\Projects\Coles\FactoryCoding\src\FactoryCodingChallenge\obj\Debug\netcoreapp3.1\FactoryCodingChallenge.AssemblyInfoInputs.cache
+C:\Projects\Coles\FactoryCoding\src\FactoryCodingChallenge\obj\Debug\netcoreapp3.1\FactoryCodingChallenge.AssemblyInfo.cs
+C:\Projects\Coles\FactoryCoding\src\FactoryCodingChallenge\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Projects\Coles\FactoryCoding\src\FactoryCodingChallenge\obj\Debug\netcoreapp3.1\FactoryCodingChallenge.csproj.CopyComplete
+C:\Projects\Coles\FactoryCoding\src\FactoryCodingChallenge\bin\Debug\netcoreapp3.1\FactoryCodingChallenge.deps.json
+C:\Projects\Coles\FactoryCoding\src\FactoryCodingChallenge\bin\Debug\netcoreapp3.1\FactoryCodingChallenge.runtimeconfig.json
+C:\Projects\Coles\FactoryCoding\src\FactoryCodingChallenge\bin\Debug\netcoreapp3.1\FactoryCodingChallenge.runtimeconfig.dev.json
+C:\Projects\Coles\FactoryCoding\src\FactoryCodingChallenge\bin\Debug\netcoreapp3.1\FactoryCodingChallenge.dll
+C:\Projects\Coles\FactoryCoding\src\FactoryCodingChallenge\bin\Debug\netcoreapp3.1\FactoryCodingChallenge.pdb
+C:\Projects\Coles\FactoryCoding\src\FactoryCodingChallenge\bin\Debug\netcoreapp3.1\System.Json.dll
+C:\Projects\Coles\FactoryCoding\src\FactoryCodingChallenge\obj\Debug\netcoreapp3.1\FactoryCodingChallenge.dll
+C:\Projects\Coles\FactoryCoding\src\FactoryCodingChallenge\obj\Debug\netcoreapp3.1\FactoryCodingChallenge.pdb
+C:\Projects\Coles\FactoryCoding\src\FactoryCodingChallenge\bin\Debug\netcoreapp3.1\config-inventory.json
+C:\Projects\Coles\FactoryCoding\src\FactoryCodingChallenge\bin\Debug\netcoreapp3.1\config-recipes.json
