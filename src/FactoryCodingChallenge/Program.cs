@@ -13,24 +13,21 @@ namespace FactoryCodingChallenge
     {
         static void Main(string[] args)
         {
-            var text = File.ReadAllText(".\\config-inventory.json");
-            var json = JObject.Parse(text);
-            var inventory = new Inventory(json);
+            var app = new App(
+                new Data.Configuration()
+                {
+                    InventoryPath = ".\\config-inventory.json",
+                    RecipesPath = ".\\config-recipes.json"
+                },
+                new ConsoleLogger()
+            );
 
-            var text2 = File.ReadAllText(".\\config-recipes.json");
-            var json2 = JObject.Parse(text2);
-            var recipe = new Recipe(json2);
+            app.PrintInventories();
 
-            var logger = new ConsoleLogger();
+            app.Build("electric_engine", 3);
 
-            var factory = new AutoFactory(inventory, recipe, logger);
+            app.PrintInventories();
 
-            logger.Log(factory.Inventory);
-            
-            factory.Build("electric_engine", 3);
-
-            logger.Log(factory.Inventory);
-            Console.WriteLine("Hello World!");
         }
     }
 }
