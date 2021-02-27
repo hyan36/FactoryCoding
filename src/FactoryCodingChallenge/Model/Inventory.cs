@@ -36,5 +36,15 @@ namespace FactoryCodingChallenge.Model
             var newStock = currentStock + number;
             Stocks[key] = newStock;
         }
+
+        public override string ToString()
+        {
+            var result = string.Empty;
+            foreach(var key in Stocks.Keys)
+            {
+                result += $"* {key}: {Stocks[key]} \n";
+            }
+            return result;
+        }
     }
 }

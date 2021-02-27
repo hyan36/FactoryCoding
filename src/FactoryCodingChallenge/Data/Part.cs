@@ -22,7 +22,7 @@ namespace FactoryCodingChallenge.Data
 
         public override string ToString()
         {
-            return $"recipe '{Code}' in {Time}s";
+            return $"> building recipe '{Code}' in {Time}s";
         }
     }
 

@@ -26,14 +26,15 @@ namespace FactoryCodingChallenge.Factory
         }
 
         public void Build(string code, int qty)
-        {
-            Timer = 0.0;
+        {           
             var canBuild = true;
             while(qty > 0 && canBuild)
             {
+                Timer = 0.0;
                 var part = Recipe.GetRecipe(code);
                 canBuild = Build(code, 1, 0);
                 qty--;
+                Logger.Log($"Built {part.Title} in {Timer}s \n");
             }
         }
 
@@ -52,8 +53,7 @@ namespace FactoryCodingChallenge.Factory
             {
                 var part = recipe;
                 Timer += part.Time;
-                var producedQty = (int) Math.Ceiling((decimal)qty / part.Produces[code]);
-                Logger.Log(layer, part);
+                var producedQty = (int) Math.Ceiling((decimal)qty / part.Produces[code]);               
                 foreach (var consume in part.Consumes)
                 {
                     var consumeQty = consume.Value;
@@ -64,6 +64,7 @@ namespace FactoryCodingChallenge.Factory
                     }
                 }
                 Inventory.AddStock(code, qty - producedQty);
+                Logger.Log(layer, part, Timer);
             }
 
             if (!hasStock && recipe == null)

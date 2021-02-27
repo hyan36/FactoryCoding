@@ -21,8 +21,15 @@ namespace FactoryCodingChallenge
             var json2 = JObject.Parse(text2);
             var recipe = new Recipe(json2);
 
-            var factory = new AutoFactory(inventory, recipe, new ConsoleLogger());
+            var logger = new ConsoleLogger();
+
+            var factory = new AutoFactory(inventory, recipe, logger);
+
+            logger.Log(factory.Inventory);
+            
             factory.Build("electric_engine", 3);
+
+            logger.Log(factory.Inventory);
             Console.WriteLine("Hello World!");
         }
     }

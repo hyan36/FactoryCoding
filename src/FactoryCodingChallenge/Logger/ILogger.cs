@@ -1,4 +1,5 @@
 ﻿using FactoryCodingChallenge.Data;
+using FactoryCodingChallenge.Model;
 
 namespace FactoryCodingChallenge.Logger
 {
@@ -6,6 +7,8 @@ namespace FactoryCodingChallenge.Logger
     {
         void Log(string text);
 
-        void Log(int layer, Part part);
+        void Log(int layer, Part part, double time, string divider = "\t");
+
+        void Log(IInventory inventory);
     }
 }
