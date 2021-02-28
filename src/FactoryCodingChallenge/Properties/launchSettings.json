@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FactoryCodingChallenge": {
+      "commandName": "Project",
+      "commandLineArgs": " -b recipe_elec_engine -q 3"
+    }
+  }
+}

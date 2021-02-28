@@ -32,11 +32,11 @@ namespace FactoryCodingChallenge.Factory
             {
                 Timer = 0.0;
                 var part = Recipe.GetRecipe(code);
-                built = Build(code, 1, 0);
+                built = Build(Recipe.GetCode(code), 1, 0);
                 qty--;
                 if (built)
                 {
-                    Inventory.AddStock(code, 1);
+                    Inventory.AddStock(part.Code, 1);
                     Logger.Log($"Built {part.Title} in {Timer}s \n");
                 } 
                 else

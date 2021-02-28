@@ -29,9 +29,12 @@ namespace FactoryCodingChallenge.Model
                 }
             }
         }
+
         public Part GetRecipe(string code) {
-            var key = Lookup.ContainsKey(code) ? Lookup[code] : code;            
+            var key = Lookup.ContainsKey(code) ? Lookup[code] : code;
             return Recipes.ContainsKey(key) ? Recipes[key] : null;
         }
+
+        public string GetCode(string code) => Lookup.ContainsKey(code) ? Lookup[code] : code;
     }
 }

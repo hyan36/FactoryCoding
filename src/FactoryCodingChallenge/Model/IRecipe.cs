@@ -7,5 +7,6 @@ namespace FactoryCodingChallenge.Model
     {
         Dictionary<string, Part> Recipes { get; }
         Part GetRecipe(string code);
+        string GetCode(string code);
     }
 }
