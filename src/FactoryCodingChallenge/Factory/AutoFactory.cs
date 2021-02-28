@@ -36,7 +36,7 @@ namespace FactoryCodingChallenge.Factory
                 qty--;
                 if (built)
                 {
-                    Inventory.AddStock(part.Code, 1);
+                    Inventory.AddStock(Recipe.GetCode(code), 1);
                     Logger.Log($"Built {part.Title} in {Timer}s \n");
                 } 
                 else
