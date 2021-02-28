@@ -51,7 +51,7 @@ namespace FactoryCodingChallenge
                      
                      app.PrintInventories();
 
-                     app.Build("recipe_elec_engine", o.Qty);
+                     app.Build(o.Build, o.Qty);
 
                      app.PrintInventories();
                  });
